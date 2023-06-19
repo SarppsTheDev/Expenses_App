@@ -39,7 +39,7 @@ export default ({ expense, setIsEditing }) => {
                 <Form.Label>Description</Form.Label>
                 <Form.Control as='select'
                     onChange={event => setDescription(event.target.value)}>
-                    {descriptions.map(d => <option>{d}</option>)}
+                    {descriptions.map((d,index) => <option key={index}>{d}</option>)}
                 </Form.Control>
             </Col>
             <Col>
