@@ -1,5 +1,5 @@
 using expenses_db;
-using expenses.core;
+using expenses_core;
 
 var builder = WebApplication.CreateBuilder(args);
 

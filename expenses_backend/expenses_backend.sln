@@ -4,7 +4,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "expenses_backend", "expense
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "expenses_db", "expenses_db\expenses_db.csproj", "{82932611-5009-473D-B50E-44F9A4CB0BB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "expenses.core", "expenses.core\expenses.core.csproj", "{2A361511-73B8-48A5-B146-8939F2A5CFFE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "expenses_core", "expenses_core\expenses_core.csproj", "{2A361511-73B8-48A5-B146-8939F2A5CFFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

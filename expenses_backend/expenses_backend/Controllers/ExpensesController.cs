@@ -1,4 +1,4 @@
-using expenses.core;
+using expenses_core;
 using Microsoft.AspNetCore.Mvc;
 
 namespace expenses_backend.Controllers;

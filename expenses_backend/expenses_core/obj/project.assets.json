@@ -3203,11 +3203,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses.core/expenses.core.csproj",
-      "projectName": "expenses.core",
-      "projectPath": "/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses.core/expenses.core.csproj",
+      "projectUniqueName": "/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses_core/expenses_core.csproj",
+      "projectName": "expenses_core",
+      "projectPath": "/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses_core/expenses_core.csproj",
       "packagesPath": "/Users/sarpps/.nuget/packages/",
-      "outputPath": "/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses.core/obj/",
+      "outputPath": "/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses_core/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/sarpps/.nuget/NuGet/NuGet.Config"

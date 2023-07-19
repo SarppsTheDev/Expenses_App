@@ -16,7 +16,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\expenses.core\expenses.core.csproj" />
+      <ProjectReference Include="..\expenses_core\expenses_core.csproj" />
       <ProjectReference Include="..\expenses_db\expenses_db.csproj" />
     </ItemGroup>
 
