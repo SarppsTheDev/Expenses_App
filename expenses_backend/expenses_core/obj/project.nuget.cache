@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4ShAGNP0YIjlU4UK2b2uogz5PML9LP3Bb+IEzB2oHPXw9RIo1x4C/5ypguKYzkClAOKXvdITedQrY3TJJD/VDg==",
+  "dgSpecHash": "McpCL2/MS6BDzhOItlansylgXM48+KKKqajfM27G3tYBBPneUM02FZ1MMhQfzdy7j980aGx1T2FOfr26N5LYbQ==",
   "success": true,
-  "projectFilePath": "/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses.core/expenses.core.csproj",
+  "projectFilePath": "/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses_core/expenses_core.csproj",
   "expectedPackageFiles": [
     "/Users/sarpps/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/sarpps/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",

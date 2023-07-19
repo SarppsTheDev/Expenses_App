@@ -1227,17 +1227,17 @@
           }
         }
       },
-      "expenses.core/1.0.0": {
+      "expenses_core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "expenses_db": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/expenses.core.dll": {}
+          "bin/placeholder/expenses_core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/expenses.core.dll": {}
+          "bin/placeholder/expenses_core.dll": {}
         }
       },
       "expenses_db/1.0.0": {
@@ -3890,10 +3890,10 @@
         "version.txt"
       ]
     },
-    "expenses.core/1.0.0": {
+    "expenses_core/1.0.0": {
       "type": "project",
-      "path": "../expenses.core/expenses.core.csproj",
-      "msbuildProject": "../expenses.core/expenses.core.csproj"
+      "path": "../expenses_core/expenses_core.csproj",
+      "msbuildProject": "../expenses_core/expenses_core.csproj"
     },
     "expenses_db/1.0.0": {
       "type": "project",
@@ -3906,7 +3906,7 @@
       "Microsoft.AspNetCore.OpenApi >= 7.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.9",
       "Swashbuckle.AspNetCore >= 6.4.0",
-      "expenses.core >= 1.0.0",
+      "expenses_core >= 1.0.0",
       "expenses_db >= 1.0.0"
     ]
   },
@@ -3935,8 +3935,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses.core/expenses.core.csproj": {
-              "projectPath": "/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses.core/expenses.core.csproj"
+            "/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses_core/expenses_core.csproj": {
+              "projectPath": "/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses_core/expenses_core.csproj"
             },
             "/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses_db/expenses_db.csproj": {
               "projectPath": "/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses_db/expenses_db.csproj"

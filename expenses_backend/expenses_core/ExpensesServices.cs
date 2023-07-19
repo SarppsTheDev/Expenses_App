@@ -1,6 +1,6 @@
 using expenses_db;
 
-namespace expenses.core;
+namespace expenses_core;
 
 public class ExpensesServices : IExpensesServices
 {
