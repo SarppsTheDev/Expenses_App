@@ -1,0 +1,14 @@
+/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses_db/bin/Debug/net7.0/expenses_db.deps.json
+/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses_db/bin/Debug/net7.0/expenses_db.runtimeconfig.json
+/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses_db/bin/Debug/net7.0/expenses_db.dll
+/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses_db/bin/Debug/net7.0/expenses_db.pdb
+/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses_db/obj/Debug/net7.0/expenses_db.csproj.AssemblyReference.cache
+/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses_db/obj/Debug/net7.0/expenses_db.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses_db/obj/Debug/net7.0/expenses_db.AssemblyInfoInputs.cache
+/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses_db/obj/Debug/net7.0/expenses_db.AssemblyInfo.cs
+/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses_db/obj/Debug/net7.0/expenses_db.csproj.CoreCompileInputs.cache
+/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses_db/obj/Debug/net7.0/expenses_db.dll
+/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses_db/obj/Debug/net7.0/refint/expenses_db.dll
+/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses_db/obj/Debug/net7.0/expenses_db.pdb
+/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses_db/obj/Debug/net7.0/expenses_db.genruntimeconfig.cache
+/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses_db/obj/Debug/net7.0/ref/expenses_db.dll
