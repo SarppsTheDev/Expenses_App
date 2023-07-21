@@ -10,6 +10,11 @@ public class ExpensesServices : IExpensesServices
     {
         _context = context;
     }
+
+    public Expense GetExpense(int id)
+    {
+        return _context.Expenses.FirstOrDefault(e => e.Id == id);
+    }
     
     public List<Expense> GetExpenses()
     {

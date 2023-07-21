@@ -7,7 +7,7 @@ namespace expenses_backend.Controllers;
 [Route("[controller]")]
 public class ExpensesController : ControllerBase
 {
-    private IExpensesServices _expensesServices;
+    private readonly IExpensesServices _expensesServices;
     
     public ExpensesController(IExpensesServices expensesServices)
     {
@@ -18,5 +18,11 @@ public class ExpensesController : ControllerBase
     public IActionResult GetExpenses()
     {
         return Ok(_expensesServices.GetExpenses());
+    }
+
+    [HttpGet("{id}", Name = "GetExpense")]
+    public IActionResult GetExpense(int id)
+    {
+        return Ok(_expensesServices.GetExpense(id));
     }
 }
