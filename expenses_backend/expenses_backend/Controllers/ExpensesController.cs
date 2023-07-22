@@ -1,4 +1,5 @@
 using expenses_core;
+using expenses_db;
 using Microsoft.AspNetCore.Mvc;
 
 namespace expenses_backend.Controllers;
@@ -24,5 +25,25 @@ public class ExpensesController : ControllerBase
     public IActionResult GetExpense(int id)
     {
         return Ok(_expensesServices.GetExpense(id));
+    }
+
+    [HttpPost]
+    public IActionResult CreateExpense(Expense expense)
+    {
+        var newExpense = _expensesServices.CreateExpense(expense);
+        return CreatedAtRoute("GetExpense", new { newExpense.Id }, newExpense);
+    }
+
+    [HttpDelete]
+    public IActionResult DeleteExpense(Expense expense)
+    {
+        _expensesServices.DeleteExpense(expense);
+        return Ok();
+    }
+
+    [HttpPut]
+    public IActionResult EditExpense(Expense expense)
+    {
+        return Ok(_expensesServices.EditExpense(expense));
     }
 }
