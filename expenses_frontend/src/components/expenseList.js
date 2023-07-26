@@ -9,8 +9,12 @@ export default () => {
     const expenses = useSelector(state => state.expensesReducer.expenses);
 
     useEffect(() => {
-        GetExpenses(dispatch);
-    }, [])
+        const fetchExpenses = async () => {
+            await GetExpenses(dispatch);
+        };
+
+        fetchExpenses();
+    }, [dispatch]); // Make sure to add dispatch as a dependency
 
     return expenses.map(e =>
         <div key={e.id} style={{ marginBottom: '1rem' }}>
