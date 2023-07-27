@@ -2,7 +2,7 @@ import { ActionCreators } from "../app/expensesReducer";
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-    baseURL: 'https://localhost:44356/Expenses',
+    baseURL: 'http://localhost:5285/Expenses',
     headers: {
         'Access-Control-Allow-Origin': '*'
     }
