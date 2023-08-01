@@ -2,3 +2,4 @@
 *.dll
 *.info
 *.pdb
+expenses_frontend/.vscode/launch.json
