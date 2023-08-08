@@ -6,15 +6,12 @@ import ExpenseForm from './expenseForm';
 
 export default () => {
     const dispatch = useDispatch();
-    const expenses = useSelector(state => state.expensesReducer.expenses);
+    const expenses = useSelector(state => state.expensesSlice.expenses);
 
     useEffect(() => {
-        const fetchExpenses = async () => {
-            await GetExpenses(dispatch);
-        };
+        GetExpenses(dispatch);
+    }, []);
 
-        fetchExpenses();
-    }, [dispatch]); // Make sure to add dispatch as a dependency
 
     return expenses.map(e =>
         <div key={e.id} style={{ marginBottom: '1rem' }}>
