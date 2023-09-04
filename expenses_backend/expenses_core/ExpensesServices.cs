@@ -1,47 +1,55 @@
 using expenses_db;
+using expenses_core.DTO;
+using Microsoft.AspNetCore.Http;
 
 namespace expenses_core;
 
 public class ExpensesServices : IExpensesServices
 {
     public AppDbContext _context;
-    
-    public ExpensesServices(AppDbContext context)
+    private readonly User _user;
+
+    public ExpensesServices(AppDbContext context, IHttpContextAccessor httpContextAccessor)
     {
         _context = context;
+        _user = _context.Users.First(u => u.Username == httpContextAccessor.HttpContext.User.Identity.Name);
     }
 
-    public Expense GetExpense(int id)
-    {
-        return _context.Expenses.FirstOrDefault(e => e.Id == id);
-    }
-    
-    public List<Expense> GetExpenses()
-    {
-        return _context.Expenses.ToList();
-    }
+    public ExpenseDTO GetExpense(int id) =>
+        _context.Expenses
+            .Where(e => e.User.Id == _user.Id && e.Id == id)
+            .Select(e => (ExpenseDTO)e)
+            .First();
 
-    public Expense CreateExpense(Expense expense)
+    public List<ExpenseDTO> GetExpenses() =>
+        _context.Expenses
+            .Where(e => e.User.Id == _user.Id)
+            .Select(e => (ExpenseDTO)e)
+            .ToList();
+
+    public ExpenseDTO CreateExpense(Expense expense)
     {
+        expense.User = _user;
         _context.Add(expense);
         _context.SaveChanges();
 
-        return expense;
+        return (ExpenseDTO)expense;
     }
 
-    public void DeleteExpense(Expense expense)
+    public void DeleteExpense(ExpenseDTO expense)
     {
-        _context.Expenses.Remove(expense);
+        var dbExpense = _context.Expenses.First(e => e.User.Id == _user.Id && e.Id == expense.Id);
+        _context.Expenses.Remove(dbExpense);
         _context.SaveChanges();
     }
 
-    public Expense EditExpense(Expense expense)
+    public ExpenseDTO EditExpense(ExpenseDTO expense)
     {
-        var dbExpense = _context.Expenses.First(e => e.Id == expense.Id);
+        var dbExpense = _context.Expenses.First(e => e.User.Id == _user.Id && e.Id == expense.Id);
         dbExpense.Description = expense.Description;
         dbExpense.Amount = expense.Amount;
         _context.SaveChanges();
 
-        return dbExpense;
+        return expense;
     }
 }

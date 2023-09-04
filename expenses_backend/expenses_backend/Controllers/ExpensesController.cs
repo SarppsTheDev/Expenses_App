@@ -1,9 +1,12 @@
 using expenses_core;
 using expenses_db;
+using expenses_core.DTO;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace expenses_backend.Controllers;
 
+[Authorize]
 [ApiController]
 [Route("[controller]")]
 public class ExpensesController : ControllerBase
@@ -35,14 +38,14 @@ public class ExpensesController : ControllerBase
     }
 
     [HttpDelete]
-    public IActionResult DeleteExpense(Expense expense)
+    public IActionResult DeleteExpense(ExpenseDTO expense)
     {
         _expensesServices.DeleteExpense(expense);
         return Ok();
     }
 
     [HttpPut]
-    public IActionResult EditExpense(Expense expense)
+    public IActionResult EditExpense(ExpenseDTO expense)
     {
         return Ok(_expensesServices.EditExpense(expense));
     }

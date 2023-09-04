@@ -10,4 +10,9 @@
       <ProjectReference Include="..\expenses_db\expenses_db.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNet.Identity.Core" Version="2.2.4" />
+      <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.10" />
+    </ItemGroup>
+
 </Project>

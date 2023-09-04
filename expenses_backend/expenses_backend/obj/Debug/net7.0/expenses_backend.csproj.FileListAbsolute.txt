@@ -78,3 +78,5 @@
 /Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses_backend/obj/Debug/net7.0/expenses_backend.pdb
 /Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses_backend/obj/Debug/net7.0/expenses_backend.genruntimeconfig.cache
 /Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses_backend/obj/Debug/net7.0/ref/expenses_backend.dll
+/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses_backend/bin/Debug/net7.0/Microsoft.AspNet.Identity.Core.dll
+/Users/sarpps/GitHub/Expenses_App/expenses_backend/expenses_backend/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
