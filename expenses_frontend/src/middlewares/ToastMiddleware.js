@@ -1,5 +1,5 @@
-import { newExpense, editExpense, deleteExpense, setExpensesError, newExpensesError, editExpensesError, deleteExpensesError } from "../app/expensesSlice";
-import { toast } from "react-toastify";
+import { newExpense, editExpense, deleteExpense, setExpensesError, newExpensesError, editExpensesError, deleteExpensesError } from '../app/expensesSlice';
+import { toast } from 'react-toastify';
 
 const ToastMiddleware = () => next => action => {
     switch (action.type) {

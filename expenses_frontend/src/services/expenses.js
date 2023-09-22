@@ -1,12 +1,17 @@
-import { setExpenses, newExpense, editExpense, deleteExpense, setExpensesError, newExpensesError, editExpensesError, deleteExpensesError } from "../app/expensesSlice";
-import axios from "axios";
+import { setExpenses, newExpense, editExpense, deleteExpense, setExpensesError, newExpensesError, editExpensesError, deleteExpensesError } from '../app/expensesSlice';
+import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:5285/Expenses",
+  baseURL: `${process.env.REACT_APP_BASE_URL}/Expenses`,
   headers: {
     "Access-Control-Allow-Origin": "*",
   },
 });
+
+axiosInstance.interceptors.request.use(config => {
+  config.headers = { authorization: 'Bearer ' + sessionStorage.getItem('token') };
+  return config;
+})
 
 export const GetExpenses = async (dispatch) => {
   try {

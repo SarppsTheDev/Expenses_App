@@ -6,7 +6,7 @@ namespace expenses_core;
 
 public class ExpensesServices : IExpensesServices
 {
-    public AppDbContext _context;
+    private AppDbContext _context;
     private readonly User _user;
 
     public ExpensesServices(AppDbContext context, IHttpContextAccessor httpContextAccessor)

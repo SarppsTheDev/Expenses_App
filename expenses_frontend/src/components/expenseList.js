@@ -2,7 +2,7 @@ import React,{ useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { GetExpenses } from '../services/expenses';
 import { Button, Row, Col } from 'react-bootstrap';
-import ExpenseForm from './expenseForm';
+import ExpenseForm from './ExpenseForm';
 
 export default () => {
     const dispatch = useDispatch();
