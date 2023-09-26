@@ -2,6 +2,7 @@ import { Form, Button, FormControl, InputGroup } from 'react-bootstrap'
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { SignUp } from '../services/authentication';
+import ThirdPartySignIns from './ThirdPartySignIns';
 
 const SignUpPage = () => {
     const [username, setUsername] = useState('');
@@ -37,6 +38,7 @@ const SignUpPage = () => {
                 Sign Up
             </Button>
         </Form>
+        <ThirdPartySignIns />
     </div>
 }
 
